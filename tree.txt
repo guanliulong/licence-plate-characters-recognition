@@ -1,0 +1,30 @@
+文件夹 PATH 列表
+卷序列号为 3770-EF07
+E:.
+│  tree.txt
+│  
+├─dataset.zip								字符图片数据集
+└─project									工程文件夹
+    │  chars_chinese_map.json				中文字符映射
+    │  chars_config.json					字符与索引配置
+    │  index.py								图像数据预处理索引化脚本
+    │  inference.py							图片字符识别脚本
+    │  model_structure.png					模型结构图
+    │  test.html							test.ipynb的html导出
+    │  test.ipynb							测试脚本
+    │  train.py								模型训练脚本
+    │  
+    ├─index									预处理后的文件
+    │      chars_all_index.csv				所有字符图像信息
+    │      chars_chinese_index.csv			中文字符图像信息
+    │      chars_letter_index.csv			字母字符图像信息
+    │      chars_number_index.csv			数字字符图像信息
+    │      
+    ├─save_models							保存的模型
+    │      chars_trained_model.h5
+    │      
+    └─test_images							测试图片文件夹
+        │  test_lu.jpg						"鲁"字符测试图片
+        │  
+        ├─generated							生成的字符图片
+        └─original							来自原数据集的字符图片
